@@ -19,16 +19,65 @@ export default {
 
                 <ul class="col-4 list-row">
 
-                    <li class="nav-list__item">characters</li>
-                    <li class="nav-list__item active">comics</li>
-                    <li class="nav-list__item">movies</li>
-                    <li class="nav-list__item">tv</li>
-                    <li class="nav-list__item">games</li>
-                    <li class="nav-list__item">collectibles</li>
-                    <li class="nav-list__item">videos</li>
-                    <li class="nav-list__item">fans</li>
-                    <li class="nav-list__item">news</li>
-                    <li class="nav-list__item">shop</li>
+                    <li class="nav-list__item">
+
+                        <a href="">characters</a>
+
+                    </li>
+
+                    <li class="nav-list__item active">
+
+                        <a href="" class="active">comics</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">movies</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">tv</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">games</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">collectibles</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">videos</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">fans</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">news</a>
+
+                    </li>
+
+                    <li class="nav-list__item">
+
+                        <a href="">shop</a>
+
+                    </li>
 
                 </ul>
 
@@ -59,11 +108,11 @@ export default {
 
 .list-row {
     display: flex;
+    gap: 1rem;
 }
 
 .nav-list__item {
     line-height: 1.5rem;
-    padding: 0 1rem;
     font-size: 0.80rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -75,14 +124,15 @@ export default {
         color: $active-lnk-color;
     }
 
-    &.active::after {
-        position: absolute;
-        content: '';
-        display: block;
-        bottom: -66px;
-        width: 50px;
-        height: 0.25rem;
-        background-color: $active-lnk-color;
-    }
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    top: 82px;
+    right: 0;
+    left: 0;
+    border-bottom: 4px solid $active-lnk-color;
+    height: 0.25rem;
 }
 </style>
