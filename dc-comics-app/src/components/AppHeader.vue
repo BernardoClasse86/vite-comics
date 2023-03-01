@@ -46,7 +46,7 @@ export default {
 .header-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 3rem 1rem 0;
+    padding: 1.5rem 1rem;
 }
 
 .nav-row {
