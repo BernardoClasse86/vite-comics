@@ -40,8 +40,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../style/partials/reset';
-@use '../style/partials/variables';
+@use '../style/partials/reset' as *;
+@use '../style/partials/variables' as *;
 
 .header {
     padding: 1.5rem 2rem;
@@ -71,8 +71,7 @@ export default {
 
     &.active,
     &:hover {
-        // color: $active-lnk-color; not working
-        color: #0282F9;
+        color: $active-lnk-color;
     }
 
     &.active::after {
@@ -80,7 +79,7 @@ export default {
         display: block;
         width: 100%;
         height: 0.25rem;
-        background-color: #0282F9;
+        background-color: $active-lnk-color;
     }
 }
 </style>

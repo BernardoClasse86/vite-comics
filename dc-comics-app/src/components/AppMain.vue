@@ -17,8 +17,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../style/partials/reset';
-@use '../style/partials/variables';
+@use '../style/partials/reset' as *;
+@use '../style/partials/variables' as *;
 
 .main-content {
     background-color: black

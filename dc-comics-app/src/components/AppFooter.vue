@@ -134,8 +134,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../style/partials/reset';
-@use '../style/partials/variables';
+@use '../style/partials/reset' as *;
+@use '../style/partials/variables' as *;
 
 //// MAIN FOOTER ////
 
@@ -180,7 +180,7 @@ export default {
 }
 
 .footer-item__text {
-    color: #727B68;
+    color: $footer-text;
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
     cursor: pointer;
@@ -191,7 +191,7 @@ export default {
 // SECOND FOOTER //
 
 .second-footer-bg {
-    background-color: #303030;
+    background-color: $footer-lnk-bar;
     position: relative;
     z-index: 2;
 }

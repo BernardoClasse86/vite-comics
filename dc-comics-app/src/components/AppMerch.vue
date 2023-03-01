@@ -55,11 +55,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../style/partials/reset';
-@use '../style/partials/variables';
+@use '../style/partials/reset' as *;
+@use '../style/partials/variables' as *;
 
 .merch-outro {
-    background-color: #0282F9;
+    background-color: $merch-bar-color;
     position: relative;
     z-index: 2;
 }
