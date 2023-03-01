@@ -68,6 +68,7 @@ export default {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
 
     &.active,
     &:hover {
@@ -75,9 +76,11 @@ export default {
     }
 
     &.active::after {
+        position: absolute;
         content: '';
         display: block;
-        width: 100%;
+        bottom: -66px;
+        width: 50px;
         height: 0.25rem;
         background-color: $active-lnk-color;
     }
