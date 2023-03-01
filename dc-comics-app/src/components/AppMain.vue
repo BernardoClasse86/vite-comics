@@ -7,7 +7,7 @@ export default {
 <template>
     <main class="main-content">
 
-        <div class="main-container">
+        <div class="main container">
 
             <h1 class="main-content-title"> Content goes here </h1>
 
@@ -17,14 +17,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/reset';
+@use '../style/partials/variables';
+
 .main-content {
     background-color: black
 }
 
-.main-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
+.main {
+    padding: 3rem 2rem;
 
     .main-content-title {
         color: white;

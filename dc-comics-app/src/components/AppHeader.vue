@@ -7,7 +7,7 @@ export default {
 <template>
     <header class="main-header">
 
-        <div class="header-container">
+        <div class="header container">
 
             <nav class="nav-row">
 
@@ -43,10 +43,8 @@ export default {
 @use '../style/partials/reset';
 @use '../style/partials/variables';
 
-.header-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
+.header {
+    padding: 1.5rem 2rem;
 }
 
 .nav-row {
@@ -73,6 +71,7 @@ export default {
 
     &.active,
     &:hover {
+        // color: $active-lnk-color; not working
         color: #0282F9;
     }
 

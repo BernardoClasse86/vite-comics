@@ -14,23 +14,11 @@ export default {
 </script>
 
 <template>
-  <div>
+  <AppHeader />
 
-    <AppHeader />
+  <AppMain />
 
-  </div>
-
-  <div>
-
-    <AppMain />
-
-  </div>
-
-  <div>
-
-    <AppFooter />
-
-  </div>
+  <AppFooter />
 </template>
 
 <style lang="scss">
