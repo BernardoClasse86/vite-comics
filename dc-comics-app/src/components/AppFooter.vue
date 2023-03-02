@@ -1,6 +1,60 @@
 <script>
+import FooterMenus from './FooterMenus.vue';
 export default {
+    components: {
+        FooterMenus
+    },
 
+    data() {
+        return {
+            footerMenuDcComics: {
+                title: 'dc comics',
+                links: [
+                    'Characters',
+                    'Comics',
+                    'Movies',
+                    'TV',
+                    'Games',
+                    'Videos',
+                    'News'
+                ]
+            },
+            footerMenuShop: {
+                title: 'shop',
+                links: [
+                    'Shop DC',
+                    'Shop DC Collectibles'
+                ]
+            },
+            footerMenuDc: {
+                title: 'dc',
+                links: [
+                    'Terms of Use',
+                    'Privacy policy (New)',
+                    'Ad Choices',
+                    'Advertising',
+                    'Jobs',
+                    'Subscriptions',
+                    'Talent Workshops',
+                    'CPSC Certificates',
+                    'Ratings',
+                    'Shop Help',
+                    'Contact Us'
+                ]
+            },
+            footerMenuSites: {
+                title: 'sites',
+                links: [
+                    'DC',
+                    'MAD Magazine',
+                    'DC Kids',
+                    'DC Universe Online (Best MMO-RPG Ever)',
+                    'DC Power Visa'
+                ]
+            },
+
+        }
+    }
 }
 </script>
 
@@ -17,65 +71,21 @@ export default {
 
                     <div class="col row-column">
 
-                        <div>
+                        <FooterMenus :title="footerMenuDcComics.title" :links="footerMenuDcComics.links" />
 
-                            <h2 class="footer-item__title">dc comics</h2>
-
-                            <ul>
-                                <li class="footer-item__text">Characters</li>
-                                <li class="footer-item__text">Comics</li>
-                                <li class="footer-item__text">Movies</li>
-                                <li class="footer-item__text">TV</li>
-                                <li class="footer-item__text">Games</li>
-                                <li class="footer-item__text">Videos</li>
-                                <li class="footer-item__text">News</li>
-                            </ul>
-
-                        </div>
-
-                        <div>
-
-                            <h2 class="footer-item__title">shop</h2>
-
-                            <ul>
-                                <li class="footer-item__text">Shop DC</li>
-                                <li class="footer-item__text">Shop DC Collectibles</li>
-                            </ul>
-                        </div>
+                        <FooterMenus :title="footerMenuShop.title" :links="footerMenuShop.links" />
 
                     </div>
 
                     <div class="col">
 
-                        <h2 class="footer-item__title">dc</h2>
-
-                        <ul>
-                            <li class="footer-item__text">Terms of Use</li>
-                            <li class="footer-item__text">Privacy policy (New)</li>
-                            <li class="footer-item__text">Ad Choices</li>
-                            <li class="footer-item__text">Advertising</li>
-                            <li class="footer-item__text">Jobs</li>
-                            <li class="footer-item__text">Subscriptions</li>
-                            <li class="footer-item__text">Talent Workshops</li>
-                            <li class="footer-item__text">CPSC Certificates</li>
-                            <li class="footer-item__text">Ratings</li>
-                            <li class="footer-item__text">Shop Help</li>
-                            <li class="footer-item__text">Contact Us</li>
-                        </ul>
+                        <FooterMenus :title="footerMenuDc.title" :links="footerMenuDc.links" />
 
                     </div>
 
                     <div class="col">
 
-                        <h2 class="footer-item__title">sites</h2>
-
-                        <ul>
-                            <li class="footer-item__text">DC</li>
-                            <li class="footer-item__text">MAD Magazine</li>
-                            <li class="footer-item__text">DC Kids</li>
-                            <li class="footer-item__text">DC Universe Online (Best MMO-RPG Ever)</li>
-                            <li class="footer-item__text">DC Power Visa</li>
-                        </ul>
+                        <FooterMenus :title="footerMenuSites.title" :links="footerMenuSites.links" />
 
                     </div>
 

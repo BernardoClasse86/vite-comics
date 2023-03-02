@@ -27,14 +27,14 @@ export default {
 
                 <li class="merch__item">
 
-                    <img class="merch-item__thumb" src="/images/buy-comics-shop-locator.png" alt="">
+                    <img class="merch-item__thumb" src="/images/buy-comics-subscriptions.png" alt="">
                     <p class="merch-item__text">subscription</p>
 
                 </li>
 
                 <li class="merch__item">
 
-                    <img class="merch-item__thumb" src="/images/buy-comics-subscriptions.png" alt="">
+                    <img class="merch-item__thumb" src="/images/buy-comics-shop-locator.png" alt="">
                     <p class="merch-item__text">comic store locator</p>
 
                 </li>
@@ -42,7 +42,7 @@ export default {
                 <li class="merch__item">
 
                     <!-- <img src="/images/buy-dc-power-visa.svg" alt="">  not working -->
-                    <img class="merch-item__thumb" src="/images/buy-comics-subscriptions.png" alt="">
+                    <img class="merch-item__thumb" src="/images/buy-dc-power-visa.svg" alt="">
                     <p class="merch-item__text">dc power visa</p>
 
                 </li>
