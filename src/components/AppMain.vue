@@ -109,6 +109,8 @@ export default {
 
             </div>
 
+            <div class="main-btn">Load More</div>
+
         </div>
 
     </main>
@@ -157,5 +159,18 @@ export default {
         grid-template-columns: repeat(6, 1fr);
         gap: 0.5rem;
     }
+}
+
+.main-btn {
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: $active-lnk-color;
 }
 </style>
